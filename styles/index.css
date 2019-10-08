@@ -1,0 +1,131 @@
+/* GENERAL STYLES */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+body {
+  line-height: 2;
+}
+section {
+  padding: 4% 0;
+}
+
+i {
+  font-size: 50px;
+}
+
+/* HEADER SECTION STYLES */
+header {
+  background-image: url('../images/carnation-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoCont {
+  width: 5%;
+}
+
+.links {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.titles div {
+  width: 50%;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+}
+
+/* ABOUT SECTION STYLES */
+#about {
+  background: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about h2 {
+  text-align: center;
+}
+
+#about div {
+  background: palevioletred;
+  width: 60%;
+}
+
+/* SKILLS SECTION STYLES */
+#skills h2 {
+  text-align: center;
+}
+
+.SkillsCont {
+  display: flex;
+  justify-content: space-around;
+}
+
+.SkillsCont div {
+  width: 25%;
+  text-align: center;
+}
+
+/* MEDIA QUERIES FOR 900px and 500PX */
+@media (max-width: 900px) {
+  #about div {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .SkillsCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .SkillsCont div {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logoCont {
+    width: 15%;
+  }
+  .links {
+    width: 90%;
+  }
+  #about div {
+    width: 90%;
+  }
+}
