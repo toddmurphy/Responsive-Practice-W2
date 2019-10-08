@@ -15,6 +15,7 @@ section {
 
 i {
   font-size: 50px;
+  padding: 10%;
 }
 
 /* HEADER SECTION STYLES */
@@ -75,13 +76,15 @@ nav {
 }
 
 #about div {
-  background: palevioletred;
-  width: 60%;
+  width: 80%;
+  padding: 2% 5%;
+  border-radius: 5px;
 }
 
 /* SKILLS SECTION STYLES */
 #skills h2 {
   text-align: center;
+  padding: 5%;
 }
 
 .SkillsCont {
@@ -92,6 +95,14 @@ nav {
 .SkillsCont div {
   width: 25%;
   text-align: center;
+}
+
+.SkillsCont h3 {
+  padding: 5%;
+}
+
+.SkillsCont p {
+  text-align: justify;
 }
 
 /* MEDIA QUERIES FOR 900px and 500PX */
